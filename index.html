@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Food Plaza</title>
+	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="CSS/skeleton.css">
+	<link rel="stylesheet" href="CSS/custom.css">
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<header id="header" class="header">
+		<div class="container">
+			<div class="row">
+				<div class="four columns">
+					<img src="Images/logo.png" id="logo">
+
+					<!-- ADD header Links Here -->
+					<a href="#loginModal" id="login">Login</a>
+					<a href="#signupModal" id="signup">Sign Up</a>
+					<a href="#addFoodModal" id="addFood">Add Food</a>
+					<a href="#footer">Contact us</a>
+				</div>
+				<div class="two columns u-pull-right">
+					<ul>
+						<li class="submenu"><img src="Images/supermarket.svg" id="img-cart">
+							<div id="shopping-cart">
+								<table id="cart-content" class="u-full-width">
+									<thead>
+										<tr>
+											<th>Image</th>
+											<th>Name</th>
+											<th>Price</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><img src="Images/course1.jpg" width="120"></td>
+											<td>HTML5, CSS3, JavaScript for beginners</td>
+											<td>&#x20b9;15</td>
+											<td><a href="#" class="remove">X</a></td>
+										</tr>
+										<tr>
+											<td><img src="Images/course2.jpg" width="120"></td>
+											<td>Cooking Course</td>
+											<td>&#x20b9;15</td>
+											<td><a href="#" class="remove">X</a></td>
+										</tr>
+									</tbody>
+								</table>
+
+								<a href="#" id="clear-cart" class="button u-full-width">Clear
+									Cart</a>
+
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--Call your modal-->
+	<!-- <a id="demo01" href="#animatedModal">DEMO01</a> -->
+
+
+	<!-- Login Modal -->
+	<div id="loginModal" class="modal-main">
+		<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+		<div class="close-loginModal">
+			<img src="Images//icons/close.svg" alt="close">
+		</div>
+
+		<div class="modal-content">
+			<!--Your modal content goes here-->
+			<form action="">
+				<select name="" id="">
+					<option value="">Select</option>
+					<option value="admin">Admin</option>
+					<option value="customer">Customer</option>
+				</select>
+				<label for="">Name: </label>
+				<input type="text">
+				<label for="">Phone</label>
+				<input type="text">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+
+	<!-- Sign Up Modal -->
+	<div id="signupModal" class="modal-main">
+		<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+		<div class="close-signupModal">
+			<img src="Images//icons/close.svg" alt="close">
+		</div>
+
+		<div class="modal-content">
+			<!--Your modal content goes here-->
+			<form action="">
+				<label for="">Name: </label>
+				<input type="text">
+				<label for="">Phone</label>
+				<input type="text">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+
+	<!-- Add Food Modal -->
+	<div id="addFoodModal" class="modal-main">
+		<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+		<div class="close-addFoodModal">
+			<img src="Images//icons/close.svg" alt="close">
+		</div>
+
+		<div class="modal-content">
+			<!--Your modal content goes here-->
+			<form action="">
+				<label for="">Food Name: </label>
+				<input type="text">
+				<label for="">Food Category</label>
+				<input type="text">
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+	<!-- HERO -->
+	<!-- id=hero -->
+	<div id="hero">
+		<div class="container">
+			<div class="row">
+				<div class="six columns">
+					<div class="hero-content">
+						<h2 id="learn">Let Eat Healthy Today</h2>
+						<p class="tagline">Special Offer, Home Delivery Free</p>
+						<form action="#" id="search" method="post" class="form">
+							<input class="u-full-width" type="text" placeholder="What Do You Want To Eat? "
+								id="search-course">
+							<input type="submit" id="submit-search-course" class="submit-search-course">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-bar">
+		<div class="container">
+			<div class="row">
+				<div class="four columns icon icon1">
+					<p>
+						2000 Resturant Connected <br> 1000 Farmers Connected
+					</p>
+				</div>
+				<div class="four columns icon icon2">
+					<p>
+						Eat Healthy and<br> Hygienic Food
+					</p>
+				</div>
+				<div class="four columns icon icon3">
+					<p>
+						24/7 Delivery <br> Select Your Delivery Time
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="courses-list" class="container">
+		<h1 id="heading" class="heading">Fresh On Menu</h1>
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/plate-of-cooked-pasta-2059193.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Tubular Pasta</h4>
+						<p>Dwarka Veg Hotel</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;150 <span class="u-pull-right ">&#x20b9;90</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/bread-with-soup-2474661.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Bread with Soup</h4>
+						<p>Navaratna Veg Resturant</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;400 <span class="u-pull-right ">&#x20b9;300</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to
+							Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/cooked-dish-on-plates-2175211.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Veg Dinner Plate</h4>
+						<p>Bhagat Tarachand</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;1000 <span class="u-pull-right ">&#x20b9;700</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+
+		</div>
+		<!--.row-->
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/green-banana-tree-214158.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Raw Banana</h4>
+						<p>Direct From Farm</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;30/Dozen <span class="u-pull-right ">&#x20b9;25/Dozen</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/green-piled-watermelon-59830.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Raw Watermelon</h4>
+						<p>Direct From Farm</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;35/Kg <span class="u-pull-right ">&#x20b9;22/Kg</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/apple-apple-tree-apples-branch-574919.jpg"
+						class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Fresh Ripe Apple</h4>
+						<p>Direct Himachal Pradesh Farm</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;700/Box <span class="u-pull-right ">&#x20b9;500/box</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+		</div>
+		<!--.row-->
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/pizza-2619967.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Mexican Veg/NonVeg Pizza</h4>
+						<p>Pizza Hut</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;200 <span class="u-pull-right ">&#x20b9;15</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/brod-bulle-burger-frites-551991.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Veg/Non-Veg Cheese Burger</h4>
+						<p>Burger King</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;200 <span class="u-pull-right ">&#x20b9;15</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/strawberry-milkshake-beside-kiwi-shake-109341.jpg"
+						class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Strawberry and Kiwi Milkshakes</h4>
+						<p>Keventers</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;300 <span class="u-pull-right ">&#x20b9;250</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+		</div>
+		<!--.row-->
+		<div class="row">
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/cooked-chicken-on-white-plate-2673353.jpg"
+						class="course-image u-full-width  food-img">
+					<div class="info-card">
+						<h4>Chicken Curry</h4>
+						<p>A1</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;400 <span class="u-pull-right ">&#x20b9;290</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/chicken-cooked-cuisine-cutlery-616354.jpg"
+						class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Chicken Roast</h4>
+						<p>Ashwith</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;1200 <span class="u-pull-right ">&#x20b9;1000</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+			<div class="four columns">
+				<div class="card">
+					<img src="Images/sushi-2098143.jpg" class="course-image u-full-width food-img">
+					<div class="info-card">
+						<h4>Sushi</h4>
+						<p>Chenab</p>
+						<img src="Images/stars.png">
+						<p class="price">
+							&#x20b9;500 <span class="u-pull-right ">&#x20b9;450</span>
+						</p>
+						<a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">Add to
+							Cart</a>
+					</div>
+				</div>
+				<!--.card-->
+			</div>
+		</div>
+		<!--.row-->
+	</div>
+
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="four columns">
+					<nav id="primary" class="menu">
+						<a class="link" href="#">For Business</a> <a class="link" href="#">Become
+							an Instructor</a> <a class="link" href="#">Mobile Applications</a> <a class="link"
+							href="#">Support</a> <a class="link" href="#">Help</a>
+					</nav>
+				</div>
+				<div class="four columns">
+					<nav id="secondary" class="menu">
+						<a class="link" href="#">About Us</a> <a class="link" href="#">Work
+							with us</a> <a class="link" href="#">Blog</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="JS/animatedModal.min.js"></script>
+	<script src="JS/app.js"></script>
+
+	<script>
+		$("#login").animatedModal({
+			animatedIn: 'scale-in-center',
+			animatedOut: 'scale-out-center',
+			color: 'rgba(0,0,0,0.5)',
+			// Callbacks
+			beforeOpen: function () {
+				console.log("The animation was called");
+			},
+			afterOpen: function () {
+				console.log("The animation is completed");
+			},
+			beforeClose: function () {
+				console.log("The animation was called");
+			},
+			afterClose: function () {
+				console.log("The animation is completed");
+			}
+		});
+		$("#signup").animatedModal({
+			animatedIn: 'scale-in-center',
+			animatedOut: 'scale-out-center',
+			color: 'rgba(0,0,0,0.5)',
+			// Callbacks
+			beforeOpen: function () {
+				console.log("The animation was called");
+			},
+			afterOpen: function () {
+				console.log("The animation is completed");
+			},
+			beforeClose: function () {
+				console.log("The animation was called");
+			},
+			afterClose: function () {
+				console.log("The animation is completed");
+			}
+		});
+
+		$("#addFood").animatedModal({
+			animatedIn: 'scale-in-center',
+			animatedOut: 'scale-out-center',
+			color: 'rgba(0,0,0,0.5)',
+			// Callbacks
+			beforeOpen: function () {
+				console.log("The animation was called");
+			},
+			afterOpen: function () {
+				console.log("The animation is completed");
+			},
+			beforeClose: function () {
+				console.log("The animation was called");
+			},
+			afterClose: function () {
+				console.log("The animation is completed");
+			}
+		});
+	</script>
+
+
+
+</body>
+
+</html>
